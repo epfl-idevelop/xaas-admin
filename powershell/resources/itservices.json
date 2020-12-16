@@ -1,3 +1,4 @@
+/* Liste des services IT pour lesquels il faut crééer un Business Group dans le tenant ITServices */
 {
     "dev": [],
     "test": [

@@ -1,3 +1,5 @@
+/* Permet de dire quels Service (au sens vRA du terme) ou quels éléments de catalogue on ne veut pas présenter aux utilisateurs finaux du tenant EPFL
+Le filtre est fait avec un DN d'OU LDAP. Tout ce qui est dans cette OU et en dessous sera pris en compte pour les restrictions. */
 [
     {
         // Les unités qui sont sous cette arborescence sont concernées

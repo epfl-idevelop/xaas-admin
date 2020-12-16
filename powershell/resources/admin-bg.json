@@ -1,3 +1,5 @@
+/* Contient les informations nécessaires pour ajouter des Business Group "admin" dans les différfents tenants.
+La structure des informations varie en fonction du tenant dans lequel on veut ajouter le Business Group */
 {
     "epfl":
     [
@@ -6,9 +8,11 @@
             "manualUnits": [
                 {
                     "name": "XAASADM",
-                    "uniqueidentifier": "00000",
+                    // Attention, l'identifiant doit être différents pour chaque BG admin ajouté, il faut faire attention aux collisions avec des ID existants pour la faculté concernée
+                    "uniqueidentifier": "00000", 
                     "billingMail": "vsissp-test-notification@groupes.epfl.ch", 
-                    "contentGroup": "vra_t_adm_epfl"
+                    // nom du groupe AD dont il faudra reprendre les membres pour avoir les droits "user" dans le BG
+                    "contentGroup": "vra_t_adm_epfl"                     
                 }
             ]
         }

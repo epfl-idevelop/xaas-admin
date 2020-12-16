@@ -167,7 +167,7 @@ class NotificationMail
     #>
     hidden [string] getRandomHTMLQuote()
     {
-        $quotes = Get-Content $global:MAIL_QUOTES_FILE | ConvertFrom-Json
+        $quotes = loadFromCommentedJSON -jsonFile $global:MAIL_QUOTES_FILE
 
         $quoteNo = (Get-Random -Maximum ($quotes.count-1))
         return ("<i>{0}.</i> <small>({1})</small>" -f $quotes[$quoteNo].quote, $quotes[$quoteNo].author)
